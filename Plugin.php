@@ -1,5 +1,6 @@
 <?php namespace Pathao\Mailer;
 
+use Pathao\Mailer\Transport\SendgridTransport;
 use System\Classes\PluginBase;
 use System\Models\MailSettings;
 
@@ -52,6 +53,27 @@ class Plugin extends PluginBase
                     ]
                 ],
             ], 'secondary');
+        });
+
+        \App::extend('swift.transport', function(\Illuminate\Mail\TransportManager $manager) {
+            return $manager->extend(self::MODE_SENDGRID, function() {
+                $config = \App::make('config');
+                return new SendgridTransport($config->get('services.sendgrid.api_key'));
+            });
+        });
+    }
+
+    public function register()
+    {
+        /*
+         * Override system mailer with mail settings
+         */
+        \Event::listen('mailer.register', function () {
+            $settings = MailSettings::instance();
+            if ($settings->send_mode === self::MODE_SENDGRID) {
+                $config = \App::make('config');
+                $config->set('services.sendgrid.api_key', $settings->sendgrid_api_key);
+            }
         });
     }
 }
