@@ -1,6 +1,7 @@
 {
   "name": "pathao/sendgrid-plugin",
   "description": "Pathao SendGrid plugin of sending email for OctoberCMS",
+  "type": "library",
   "homepage": "https://magic.pathao.com/abid/october-cms-sendgrid-plugin",
   "keywords": ["october", "cms", "pathao", "admin", "sendgrid", "email"],
   "authors": [
@@ -9,7 +10,12 @@
       "email": "abid@pathao.com"
     }
   ],
+  "config": {
+    "platform": {
+      "php": "5.5.9"
+    }
+  },
   "require": {
-    "sendgrid/sendgrid": "^7.0"
+    "sendgrid/sendgrid": "^5.0"
   }
 }
