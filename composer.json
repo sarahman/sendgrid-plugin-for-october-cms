@@ -1,0 +1,15 @@
+{
+  "name": "pathao/sendgrid-plugin",
+  "description": "Pathao SendGrid plugin of sending email for OctoberCMS",
+  "homepage": "https://magic.pathao.com/abid/october-cms-sendgrid-plugin",
+  "keywords": ["october", "cms", "pathao", "admin", "sendgrid", "email"],
+  "authors": [
+    {
+      "name": "Syed Abidur Rahman",
+      "email": "abid@pathao.com"
+    }
+  ],
+  "require": {
+    "sendgrid/sendgrid": "^7.0"
+  }
+}
