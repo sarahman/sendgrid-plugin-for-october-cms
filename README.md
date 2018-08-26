@@ -1,4 +1,8 @@
-### Usage Instruction
+Sendgrid integration plugin
+
+This plugin implements the Sendgrid subscription form functionality for the [OctoberCMS](http://octobercms.com).
+
+## Usage Instruction
 
 - Clone this plugin repository and name it to `plugins/sarahman/mailer`.
 
@@ -17,3 +21,15 @@ composer install
  ```
 
 - Add the value of `SENDGRID_API_KEY` key in the `.env` file.
+
+## Configuration
+
+In order to use the plugin you need to get the API key from your [Sendgrid account](https://app.sendgrid.com/settings/api_keys).
+
+1. In the OctoberCMS back-end go to the System / Settings page and click the `Mail Configuration` link. 
+2. In the `Mail Settings` form,
+    - Select the `Sendgrid` option in the `Mail method` dropdown.
+    - Enter the `Sendgrid` API key in the `Sendgrid API Key` text box.
+    - Then submit this form.
+
+That's it!
