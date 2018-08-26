@@ -1,6 +1,6 @@
-<?php namespace Pathao\Mailer;
+<?php namespace Sarahman\Mailer;
 
-use Pathao\Mailer\Transport\SendgridTransport;
+use Sarahman\Mailer\Transport\SendgridTransport;
 use System\Classes\PluginBase;
 use System\Models\MailSettings;
 
@@ -18,7 +18,7 @@ class Plugin extends PluginBase
         return [
             'name'        => 'SendGrid Mailer Driver',
             'description' => 'This plugin is used in October CMS for email sending functionality through Sendgrid driver.',
-            'author'      => 'Pathao',
+            'author'      => 'Syed Abidur Rahman',
             'icon'        => 'icon-user'
         ];
     }

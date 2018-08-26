@@ -1,4 +1,4 @@
-<?php namespace Pathao\Mailer\Transport;
+<?php namespace Sarahman\Mailer\Transport;
 
 use Swift_Transport;
 use Swift_Mime_Message;

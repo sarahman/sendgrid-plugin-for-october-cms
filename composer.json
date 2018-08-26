@@ -1,13 +1,13 @@
 {
-  "name": "pathao/sendgrid-plugin",
-  "description": "Pathao SendGrid plugin of sending email for OctoberCMS",
+  "name": "sarahman/sendgrid-plugin-for-october-cms",
+  "description": "SendGrid plugin of sending email in OctoberCMS",
   "type": "library",
-  "homepage": "https://magic.pathao.com/abid/october-cms-sendgrid-plugin",
-  "keywords": ["october", "cms", "pathao", "admin", "sendgrid", "email"],
+  "homepage": "https://github.com/sarahman/sendgrid-plugin-for-october-cms",
+  "keywords": ["october", "cms", "admin", "sendgrid", "email"],
   "authors": [
     {
       "name": "Syed Abidur Rahman",
-      "email": "abid@pathao.com"
+      "email": "aabid048@gmail.com"
     }
   ],
   "config": {
