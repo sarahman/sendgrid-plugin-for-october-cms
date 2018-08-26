@@ -38,13 +38,13 @@ class Plugin extends PluginBase
             }
 
             $field = $widget->getField('send_mode');
-            $field->options(array_merge($field->options(), [self::MODE_SENDGRID => trans('pathao.mailer::lang.mail.sendgrid')]));
+            $field->options(array_merge($field->options(), [self::MODE_SENDGRID => trans('sarahman.mailer::lang.mail.sendgrid')]));
 
             // Add an extra birthday field
             $widget->addFields([
                 'sendgrid_api_key' => [
-                    'label' => trans('pathao.mailer::lang.mail.sendgrid_api_key'),
-                    'comment' => trans('pathao.mailer::lang.mail.sendgrid_api_key_comment'),
+                    'label' => trans('sarahman.mailer::lang.mail.sendgrid_api_key'),
+                    'comment' => trans('sarahman.mailer::lang.mail.sendgrid_api_key_comment'),
                     'tab' => ' ',
                     'trigger' => [
                         'action' => 'show',

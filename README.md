@@ -1,6 +1,6 @@
 ### Usage Instruction
 
-- Clone this plugin repository and name it to `plugins/pathao/mailer`.
+- Clone this plugin repository and name it to `plugins/sarahman/mailer`.
 
 - Go to that folder and run this command:
 
