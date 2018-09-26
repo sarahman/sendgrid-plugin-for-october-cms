@@ -61,6 +61,12 @@ class Plugin extends PluginBase
                 return new SendgridTransport($config->get('services.sendgrid.api_key'));
             });
         });
+
+        MailSettings::extend(function($model) {
+            $model->bindEvent('model.beforeValidate', function () use ($model) {
+                $model->rules['sendgrid_api_key'] = 'required_if:send_mode,' . self::MODE_SENDGRID;
+            });
+        });
     }
 
     public function register()
