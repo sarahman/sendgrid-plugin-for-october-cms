@@ -4,6 +4,8 @@
   "type": "library",
   "homepage": "https://github.com/sarahman/sendgrid-plugin-for-october-cms",
   "keywords": ["october", "cms", "admin", "sendgrid", "email"],
+  "version": "1.0.0",
+  "license": "MIT",
   "authors": [
     {
       "name": "Syed Abidur Rahman",
@@ -11,12 +13,19 @@
     }
   ],
   "config": {
+    "preferred-install": "dist",
     "platform": {
       "php": "5.5.9"
     }
   },
   "require": {
+    "php": ">=5.5.9",
     "sendgrid/sendgrid": "^5.0"
   },
-  "minimum-stability": "dev"
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "support": {
+    "source": "https://github.com/sarahman/sendgrid-plugin-for-october-cms",
+    "issues": "https://github.com/sarahman/sendgrid-plugin-for-october-cms/issues"
+  }
 }
