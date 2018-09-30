@@ -28,7 +28,7 @@
       "Sarahman\\Mailer\\Tests\\": "tests/"
     }
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "prefer-stable": true,
   "support": {
     "source": "https://github.com/sarahman/sendgrid-plugin-for-october-cms",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8fd8a2c2ea8a2ebcb9dc1308c73dc79c",
+    "content-hash": "e86c127e4dd81329187f44feba70e2b1",
     "packages": [
         {
             "name": "sendgrid/php-http-client",
@@ -116,7 +116,7 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
