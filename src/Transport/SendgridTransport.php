@@ -5,15 +5,15 @@ use Swift_Mime_Message;
 use Swift_Events_EventListener;
 
 /**
- * Class SendgridTransport
+ * Class SendGridTransport
  *
  * @package Illuminate\Mail\Transport
- * @see https://github.com/clarification/sendgrid-laravel-driver/blob/master/src/Transport/SendgridTransport.php
+ * @see https://github.com/clarification/sendgrid-laravel-driver/blob/master/src/Transport/SendGridTransport.php
  */
-class SendgridTransport implements Swift_Transport
+class SendGridTransport implements Swift_Transport
 {
     /**
-     * The Sendgrid API key.
+     * The SendGrid API key.
      *
      * @var string
      */
@@ -23,7 +23,7 @@ class SendgridTransport implements Swift_Transport
     private $mail;
 
     /**
-     * Create a new Sendgrid transport instance.
+     * Create a new SendGrid transport instance.
      *
      * @param  string $key
      * @return void
@@ -82,8 +82,8 @@ class SendgridTransport implements Swift_Transport
         $this->setAttachment($message);
 
         try {
-            $sendgrid = new \SendGrid($this->key);
-            $response = $sendgrid->send($this->mail);
+            $sendGrid = new \SendGrid($this->key);
+            $response = $sendGrid->send($this->mail);
             return in_array($response->statusCode(), [200, 202]);
 
         } catch (\Exception $e) {
@@ -104,6 +104,7 @@ class SendgridTransport implements Swift_Transport
 
     /**
      * @param  Swift_Mime_Message $message
+     * @throws \SendGrid\Mail\TypeException
      */
     private function setFrom(Swift_Mime_Message $message)
     {

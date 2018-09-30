@@ -13,14 +13,21 @@
     }
   ],
   "config": {
-    "preferred-install": "dist",
-    "platform": {
-      "php": "5.5.9"
-    }
+    "preferred-install": "dist"
   },
   "require": {
     "php": ">=5.5.9",
-    "sendgrid/sendgrid": "^5.0"
+    "sendgrid/sendgrid": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sarahman\\Mailer\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Sarahman\\Mailer\\Tests\\": "tests/"
+    }
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
