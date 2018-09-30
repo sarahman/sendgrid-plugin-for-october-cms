@@ -4,7 +4,6 @@
   "type": "library",
   "homepage": "https://github.com/sarahman/sendgrid-plugin-for-october-cms",
   "keywords": ["october", "cms", "admin", "sendgrid", "email"],
-  "version": "1.0.0",
   "license": "MIT",
   "authors": [
     {
